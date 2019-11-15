@@ -1,0 +1,6 @@
+import string
+def getAvailableLetters(lettersGuessed):
+    AvailableLetters= string.ascii_lowercase
+    for x in lettersGuessed:
+      AvailableLetters= AvailableLetters.replace(x,'[ ]')
+      return AvailableLetters
