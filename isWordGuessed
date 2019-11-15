@@ -1,0 +1,8 @@
+def isWordGuessed(secretWord,lettersGuessed):
+    secretWord='apple'
+    WordGuessed = secretWord
+    for x in WordGuessed:
+        continue
+    else:
+        WordGuessed=WordGuesse.replace(x,' ')
+        return WordGuessed
