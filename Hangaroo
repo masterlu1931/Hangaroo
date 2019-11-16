@@ -1,0 +1,46 @@
+def Hangaroo(secretWord):
+
+    mistakesMade = 0
+
+    lettersGuessed = set()
+
+    q = 1
+
+    while  q == 1:
+
+        letters = input('Input letter here: ')
+
+        while len(letters) > 1 or letters in lettersGuessed:
+
+            if letters in lettersGuessed:
+
+                print('This has already been guessed - please in put another letter!')
+
+            else:
+
+                print('This is not a letter! Try again!')
+
+        lettersGuessed.add(letters)
+
+        if letters in secretWord:
+
+            mistakesMade = mistakesMade
+
+        else:
+
+            mistakesMade = mistakesMade + 1
+
+        print(getGuessedWord(secretWord, lettersGuessed))
+
+        print(getAvailableLetters(lettersGuessed))
+
+        print(mistakesMade)
+
+        print(isGuessedWord(secretWord, lettersGuessed))
+
+        if isGuessedWord(secretWord, lettersGuessed) == True:
+
+            q = 0
+
+    print('Congratulations! You guess it right.')
+ Hangaroo('gouste')
