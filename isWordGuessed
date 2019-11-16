@@ -3,9 +3,11 @@ def isGuessedWord(secretWord,lettersGuessed):
     for x in secretWord:
         if x in lettersGuessed:
             bloo=True
+            print('True')
             continue
         else:
             bloo=False
+            print('False')
             break
     return bloo
         
