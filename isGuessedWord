@@ -1,8 +1,8 @@
 def getGuessedWord(secretWord,lettersGuessed):
     secretWord='apple'
     GuessedWord = secretWord
-    for x in WordGuessed:
+    for x in GuessedWord:
         continue
     else:
         GuessedWord=GuessedWord.replace(x,' ')
-        return GuessWord
+        return GuessedWord
